@@ -67,7 +67,7 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="network.html">Network Visualization</a>
-      <a href="detailed_viz.html">Detailed Visualization</a>
+      <a href="detailed_viz.html">Bar Chart Visualization</a>
     </nav>
     <div class="tableauPlaceholder" id="viz1700591846145" style="position: relative">
       <noscript
@@ -89,6 +89,7 @@
         <param name="filter" value="publish=yes" />
       </object>
     </div>
+
     <script type="text/javascript">
       var divElement = document.getElementById("viz1700591846145")
       var vizElement = divElement.getElementsByTagName("object")[0]
@@ -98,6 +99,27 @@
       scriptElement.src = "https://public.tableau.com/javascripts/api/viz_v1.js"
       vizElement.parentNode.insertBefore(scriptElement, vizElement)
     </script>
+    &nbsp;&nbsp;
+    <h2>General</h2>
+    <p>Network graph visualization describes the relationship between donors and recipients based on the amount of money donated by the donor to the recipient and you can also observe how many recipients each donor has donated. For the network graph, the marks are going to be points and lines. Where points indicate the nodes and lines denote the links in the graph. Coming to channels we have area, shape, and color hue. The area indicates the amount of money donated or received whereas shape and color hue are used to categorize the donor and recipient</p>
+    <ul>
+      <li>Color : Different colors are used to represent the donor and recipient. Currently I am using one dark color (dark blue for the donor) and a bright dark color (purple for the recipient) but I believe they should be having a continuous color scale like shades of blue and purple to understand the variance in donation between them.</li>
+      <li>Transformation : combining the data with year and Colesced_purpose_name will add a lot of information to the visualization and will make it more useful for the users to interpret the data in a particular way for which purpose the donor and recipient are doing the transaction.</li>
+      <li>Animation or Interaction : Highlighting when clicked on donor it must show all recipients it has donated making it links visible and recipients respectively making everything else blur in the background which helps in increase the effectiveness of network graph.</li>
+    </ul>
+    <h2>Themes</h2>
+    <p>Both network graph and sunburst chart allow the user to complete the identified tasks. One of them represents the relationships between donor and recipient countries. Countries are represented as nodes, and the flow of aid as edges connecting the nodes. The thickness of the edges indicates the volume of aid, making it easier to identify the highest and lowest donors and recipients. And the other visualization shows how users will be able to find the average amount of donation made by each donor from 1990-2008.</p>
+    <p>From the sunburst chart user will be able to find the amount donated by each donor in the following years. Also used a color theme for visualization because we have continuous colormaps which help in showing the variance in data where in the end it covers the quantitative way of showing the visualization.</p>
+    <p>For network graph giving users options to select multiple regions and compare them will be helpful. Here the use of scrolly telling will help in providing a very structured user interface but it may limit the user experience like interactivity, more load time, and information density. Should be very careful with real-time data updates and animation which may completely influence the visualization and lead the user to have a bad experience like for suppose if the data received is invalid and dummy data then this may lead the user to have a bad visualization for the following data. Some aggregating data can lead to data loss. I have observed the donor (Thailand) does not have any link with the recipient in the visualization even though the bond exists in the data which is not aggregated well. If the aggregation of the data is not done accurately by considering the relationship between the data, it will lead to inaccurate transformation of data.</p>
+
+    <h2>Future Work</h2>
+    <ul>
+      <li>For more sophisticated interaction we can create interactive network graphs to visualize the relationships between donors and recipients over time. This could include features like dynamic filtering by year or aid amount, and tooltips displaying detailed aid information.</li>
+      <li>Implement checks to ensure data consistency, such as verifying that the aid amounts are positive, and the year is within a realistic range.</li>
+      <li>We can refactor code for efficiency, especially if dealing with large datasets. This might include optimizing data processing or rendering techniques.</li>
+      <li>Incorporate data from other sources to enrich the analysis. For example, adding aid amount received attribute for the user to know if the amount donated is received or not.</li>
+      <li>These visualizations will provide intuitive and interactive ways to explore complex relationships in the aid data, making it easier to identify patterns and insights.</li>
+    </ul>
   </body>
   <script type="text/javascript" src="https://embedding.tableauusercontent.com/tableau.embedding.3.0.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
