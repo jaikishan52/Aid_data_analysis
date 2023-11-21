@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aid Data Analysis</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+      }
+      nav {
+        background-color: #333;
+        overflow: hidden;
+        margin-bottom: 20px;
+      }
+      nav a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      nav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      section-container {
+        width: 80%;
+        margin: 20px auto;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      p {
+        color: #666;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+      section {
+        display: none;
+      }
+      #abstract {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Aid Data Analysis</h1>
+    </header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="network.html">Network</a>
+      <a href="detailed_viz.html">Detailed Viz</a>
+    </nav>
+    <div class="section-container">
+      <section id="abstract">
+        <h2>Abstract</h2>
+        <p>This topic gives detailed information about the Financial Aid Data Transactions between donors and recipients all over the world between 1991 to 2010. This data covers the information about the number of donors, recipients, amount donated in dollars and also it gives the purpose for which the amount donated. This topic mainly focuses on how much the amount has been donated by each country and the amount it is donated on what purpose to which country. This methodology involves data cleaning and data collection to enhance more reliability. The main aim of this report is to show the understanding of the International Aid data distribution showing trends and correlations which will be helpful for future donation strategies.</p>
+
+        <h2>Introduction</h2>
+        <p>Aid Data is an important policy tool for supporting economically developing countries. Between 1991 to 2010 most of the countries have donated lots of amounts based on different purposes for many developing countries(Recipients). This shows the data about the financial aid distribution globally. This dataset is rich in both categorical and quantitative data which gives us a unique opportunity to understand the complex details of global economic policies and the aid data. This project aims to make use of the data for showing the interactive visualizations by focussing on the years between 1991 to 2010. By creating interactive visualizations the team not only aims to clarify the distribution and impact of global financial aid but also seeks to inform policy negotiations and decision-making processes. This whole endeavor is supported by various tools, but we are choosing tableau and python which enables us to present complex data in an accessible manner. The visualizations we are using are highly interactive which allows users to explore the data in depth. These enhance the user experience significantly when compared to online static charts. For this Project we are planning to show two to three visualizations: Network Graph, Stacked Bar Chart, Sunburst Chart where each visualization shows the different information about the Aid Data. In Summary “Distribution of Global Financial Aid over the years” is a good project which leverages data visualization to visualize the complex data to the field of global data analysis, Local audience etc.,</p>
+
+        <h2>Related Works</h2>
+        <ul>
+          <li>
+            <img src="Screenshot 2023-11-21 at 3.48.06 PM.png" alt="Abstract Image" />
+
+            <p><a href="https://www.example.com">Canada’s Foreign Aid:</a>Our project is related to the reference I've taken in such a way that the map visualization represents data on the Canadian aid amount the country has received over the years. The size of each circle in the map corresponds to the aid amount given also when we click on the circle we can see more details like year, disbursement(the aid amount the recipient country received) and we can see more details for what purpose the amount is donated, it is also slightly different from our project visualization where we have taken two nodes(shapes) to represent both donor, recipient and connected them with edges(links) for a clear picture. The above padlet reference has some interesting filters like drop-downs to limit the data by region or change year which could be implemented in our project.</p>
+          </li>
+          <li>
+            <img src="Screenshot 2023-11-21 at 3.39.59 PM.png" alt="Abstract Image" />
+            <p><a href="https://informatics.bmj.com/content/bmjhci/28/1/e100254.full.pdf "></a>Here in the above research paper, I found a visualization regarding the COVID-19 diseases and the following treatments which can be given to them based on data for each disease. For suppose it is a virus all the following edges and nodes are colored with the same color which makes the information much clear that the nodes and edges with violet color are related to the virus they should be treated accordingly, the same goes for if it is Therapeutic or preventive procedure the disease and its following edges related to it become orange and if the following diseases can be treated by pharma they can be colored with purple. Here the marks are: For the network graph, the marks are going to be points and lines. Where points indicate the nodes and lines denote the links in the graph. Coming to channels we have area, shape, and color hue. And in comparison with our project, the representation of network graphs is quite similar where we have donors and recipients with their respective donations being made. The size of the donor or recipient varies with the amount donated or received by it. When clicking on the donor we will be able to the respective recipients it has donated to but by taking the above graph as a reference we can add the color to the edges so that when clicking on the donor we will be able to see the edges of the respective donors to recipients where it doesn't get clustered with the existing nodes and edges.</p>
+          </li>
+          <li>
+            <p><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6840821">Applying a Sunburst Visualization to Summarize User Navigation Sequences:</a>In the attached research paper, I found a visualization based on the user navigation techniques. The Sunburst chart is used to summarize the user navigation paths in a website by Kerry Rodden from Google. It is used to show the site navigation data for YouTube. In the sunburst chart, the inner ring represents the first event in the visit and the outer ring represents the subsequent events. In this, the marks are arc segments and channels represent segment sizes and colors. And we can relate this to our project as it is almost the same. The difference is that there are multiple outer rings in the research paper whereas there are only 2 rings in our project: outer and inner rings. The size of the outer and inner rings varies based on the amount donated and received.</p>
+          </li>
+        </ul>
+        <h2>Implementation</h2>
+        <p>Visualization Tool and Programming language used: The visualization tools we used are Tableau and the Programming language is Python. For the Network graph and Stacked bar chart we used Tableau. For the Sunburst chart we have written our program in python language. We used a Jupyter Notebook to write our code in python. We used python libraries like plotly, matplotlib in our code. Plotly.express is for creating an interactive sunburst chart based on the year and color which we selected in the dropdown menus. Software Architecture: We used Jupyter Notebook to create a Sunburst Chart and inside it we used a pip installer for installing the required libraries. Also we used Tableau for creating Network Graph and Stacked Bar Chart. We stored our data dataset locally in excel file format for retrieving the data. In order to retain all the generated intermittent files we used pandas in python, by this the data transformation has been done.</p>
+      </section>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>
