@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Front End Page</title>
+    <title>BAR CHART PAGE</title>
     <header>
       <h1>Aid Data Analysis using Bar graph</h1>
     </header>
@@ -96,6 +96,7 @@
         <param name="language" value="en-GB" />
       </object>
     </div>
+
     <script type="text/javascript">
       var divElement = document.getElementById("viz1700595461914")
       var vizElement = divElement.getElementsByTagName("object")[0]
@@ -105,6 +106,14 @@
       scriptElement.src = "https://public.tableau.com/javascripts/api/viz_v1.js"
       vizElement.parentNode.insertBefore(scriptElement, vizElement)
     </script>
+    &nbsp;&nbsp;
+    <h2>General</h2>
+    <p>Network graph visualization describes the relationship between donors and recipients based on the amount of money donated by the donor to the recipient and you can also observe how many recipients each donor has donated. For the network graph, the marks are going to be points and lines. Where points indicate the nodes and lines denote the links in the graph. Coming to channels we have area, shape, and color hue. The area indicates the amount of money donated or received whereas shape and color hue are used to categorize the donor and recipient</p>
+    <ul>
+      <li>Color : Here we will be using categorical colormaps because our main aim in the stacked bar chart was to give unique colors for each purpose of donation so that they can be uniquely identified by the user just by looking at the graph. We have used discrete binning for the attribute (coalesced_purpose_name) to uniquely identify them. In our visualization, We should have perceptually distinct colors which will avoid confusion among the categories.</li>
+      <li>Transformation : created a calculated field by combining (donors, and recipients) which will help in forming the links between the nodes. So in creating the stacked bar chart, we ended up using the sum of the total amount donated for the bar size, the coalesced_purpose_name is used to categorize the following donation for which purpose it was named where it will be dividing the bar and its multiple segments with unique colors if the donation is made for multiple purposes by donor to the recipient. The year attribute has been added so that the user can see the following donations made by the user during a particular year.</li>
+      <li>Animation or Interaction : We have added filters for year and donor because we want the user to be able to get the following information, how much amount is donated by this donor to all the recipients and for which purpose the donation was made. And for the filters, we have multiple options in Tableau where we can add them in the form of single value (list), single value (dropdown), single value (dropdown), single value (slider), multiple values (list), multiple values(drop down), multiple values (custom list).</li>
+    </ul>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </html>
