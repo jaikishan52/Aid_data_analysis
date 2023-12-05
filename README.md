@@ -12,6 +12,6 @@ Here you can find all the images which are included in the website and also all 
 All the styling and scripting for the web pages is done inside the html itself.
 
 The following Aid data analysis is done by 
-Jai Kishan Timmapatruni - EE36052
-Lakshmipriyanka Penchikala - KE12294
+Jai Kishan Timmapatruni - EE36052, 
+Lakshmipriyanka Penchikala - KE12294, 
 Mounika Ummadi - IL55454
