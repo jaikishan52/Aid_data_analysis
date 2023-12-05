@@ -1,6 +1,7 @@
 # Aid_data_analysis 
 
 I suggest you route through the index page where you will be guided in a flow
+
 To access the network graph page route to - https://jaikishan52.github.io/Aid_data_analysis/network.html
 to access the pie chart graph page route to - https://jaikishan52.github.io/Aid_data_analysis/mypiechart.html
 To access the bar chart page route to - https://jaikishan52.github.io/Aid_data_analysis/detailed_viz.html
